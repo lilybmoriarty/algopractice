@@ -13,7 +13,7 @@ return [0, 1].
 Unclear from Leetcode if the nums array is ALWAYS going to be a sorted list
 */
 
-// BRUTE FORCE
+// BRUTE FORCE - ON^2 time complexity, constant space
 
 let twoSum = function(nums, target) {
   for (let i = 0; i < nums.length; i++) {
@@ -23,7 +23,7 @@ let twoSum = function(nums, target) {
   }
 };
 
-// ASSUMING A SORTED LIST
+// ON time/space complexity
 
 let twoSum = function(nums, target) {
   let compliments = {};

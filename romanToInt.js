@@ -39,7 +39,6 @@ var romanToInt = function(str) {
       (curr === "X" && (next === "L" || next === "C") && next !== undefined) ||
       (curr === "C" && (next === "D" || next === "M") && next !== undefined)
     ) {
-      console.log("do i go in here at all");
       continue;
     } else if (
       ((curr === "V" || curr === "X") && prev === "I") ||

@@ -10,6 +10,8 @@ X can be placed before L (50) and C (100) to make 40 and 90.
 C can be placed before D (500) and M (1000) to make 400 and 900.
 */
 
+// FIRST ATTEMPT
+
 var romanToInt = function(str) {
   let lookup = {
     I: 1,
@@ -47,6 +49,35 @@ var romanToInt = function(str) {
     ) {
       let specialChar = str.slice(i - 1, i + 1);
       sum += lookup[specialChar];
+    } else sum += lookup[curr];
+  }
+  return sum;
+};
+
+// SIMPLIFIED ATTEMPT
+
+var romanToInt = function(str) {
+  let lookup = {
+    I: 1,
+    V: 5,
+    X: 10,
+    L: 50,
+    C: 100,
+    D: 500,
+    M: 1000
+  };
+
+  let sum = 0;
+
+  for (let i = 0; i < str.length; i++) {
+    let curr = str[i];
+    let prev = str[i - 1];
+    let next = str[i + 1];
+
+    if (lookup[curr] < lookup[next]) {
+      continue;
+    } else if (lookup[curr] > lookup[prev]) {
+      sum = sum + lookup[curr] - lookup[prev];
     } else sum += lookup[curr];
   }
   return sum;

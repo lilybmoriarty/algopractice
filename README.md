@@ -10,3 +10,5 @@ twoCityScheduling: https://leetcode.com/problems/two-city-scheduling/submissions
 invalidTransactions: https://leetcode.com/problems/invalid-transactions/
 firstUniqChar: https://leetcode.com/problems/first-unique-character-in-a-string/
 reverseLinkedList: https://leetcode.com/problems/reverse-linked-list/
+middleOfLinkedList: https://leetcode.com/problems/middle-of-the-linked-list/
+deleteNodeInLinkedList: https://leetcode.com/problems/delete-node-in-a-linked-list/

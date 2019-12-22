@@ -9,3 +9,4 @@ validParentheses: https://leetcode.com/problems/valid-parentheses/
 twoCityScheduling: https://leetcode.com/problems/two-city-scheduling/submissions/
 invalidTransactions: https://leetcode.com/problems/invalid-transactions/
 firstUniqChar: https://leetcode.com/problems/first-unique-character-in-a-string/
+reverseLinkedList: https://leetcode.com/problems/reverse-linked-list/
